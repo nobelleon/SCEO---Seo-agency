@@ -1,7 +1,7 @@
 # SCEO---Seo-agency
 
 ## Output
-https://github.com/user-attachments/assets/0cc82e67-9b1c-4dd0-86c0-0be18fd54457
+https://github.com/user-attachments/assets/e4c34321-d945-4f52-8b31-40df0528d371
 
 ---
 
