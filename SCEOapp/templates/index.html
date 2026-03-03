@@ -1,0 +1,803 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SCEO - Seo agency website</title>
+
+  <!-- 
+    - favicon link
+  -->
+  <link rel="shortcut icon" href="{% static 'assets/images/favicon.svg'%}" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="{% static 'css/style.css'%}">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header data-header>
+
+    <!-- 
+      - #overlay
+    -->
+
+    <div class="overlay" data-overlay></div>
+
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="{% static 'assets/images/logo.svg'%}" alt="SCEO logo">
+      </a>
+
+      <button class="nav-open-btn" data-nav-open-btn>
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+      <nav class="navbar" data-navbar>
+
+        <button class="nav-close-btn" data-nav-close-btn>
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link">Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#about" class="navbar-link">About</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#service" class="navbar-link">Service</a>
+          </li>         
+
+          <li class="navbar-item">
+            <a href="#features" class="navbar-link">Features</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#pricing" class="navbar-link">Pricing</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#faq" class="navbar-link">FAQ's</a>
+          </li>
+
+        </ul>
+
+        <button class="btn btn-primary">Let's Started</button>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="home">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <h1 class="h1 hero-title">Get more sales with SEO, PPC, and Email Marketing</h1>
+
+            <form action="" class="hero-form">
+
+              <input type="text" name="name" placeholder="Enter your name*" required class="input-field">
+
+              <input type="email" name="email" placeholder="Enter your email*" required class="input-field">
+
+              <button type="submit" class="btn btn-primary">Get started now</button>
+
+            </form>
+
+            <p class="hero-text">
+              <span>Free 30 days trial</span>
+              <span>Exclusive Support</span>
+              <span>No Fees</span>
+            </p>
+
+          </div>
+
+          <figure class="hero-banner">
+            <img src="{% static 'assets/images/hero-banner.png'%}" alt="Seo illustration">
+          </figure>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SERVICE
+      -->
+
+      <section class="service" id="service">
+        <div class="container">
+
+          <h2 class="h2 section-title">Get More Customers Online</h2>
+
+          <p class="section-text">
+            Increase a business's visibility, attract targeted traffic, and convert visitors into customers.
+          </p>
+
+          <ul class="service-list">
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="location-outline"></ion-icon>
+                </div>
+
+                <h3 class="h4 card-title">Local SEO</h3>
+
+                <p class="card-text">
+                  For local businesses, optimizing for the "local pack" (Google Maps) and local search terms is essential for appearing to nearby customers.
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="bar-chart-outline"></ion-icon>
+                </div>
+
+                <h3 class="h4 card-title">E-Commerce SEO</h3>
+
+                <p class="card-text">
+                  Focused on 'commercial intent' (purchase intent), which means targeting keywords used by buyers when they are ready to make a transaction.
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="pie-chart-outline"></ion-icon>
+                </div>
+
+                <h3 class="h4 card-title">Advanced Analytics</h3>
+
+                <p class="card-text">
+                  Focuses on integrating comprehensive data sets—including keyword rankings, technical site health, and backlink quality—to improve search engine visibility.
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="magnet-outline"></ion-icon>
+                </div>
+
+                <h3 class="h4 card-title">PPC Management</h3>
+
+                <p class="card-text">
+                  PPC can be used to test, validate, and identify high-conversion keywords that are later targeted via SEO. Helps businesses balance immediate.
+                </p>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="about" id="about">
+        <div class="container">
+
+          <div class="about-top">
+
+            <figure class="about-banner">
+              <img src="{% static 'assets/images/about-banner-1.png'%}" alt="Seo illustration">
+            </figure>
+
+            <div class="about-content">
+
+              <p class="section-subtitle">quick and secure</p>
+
+              <h2 class="h3 section-title">First page rankings. First name basis</h2>
+
+              <p class="section-text">
+                Google explicitly states that no one can guarantee a #1 ranking. Any agency promising this may be using obscure, low-traffic keywords to "technically" fulfill the promise without driving real revenue.
+              </p>
+
+              <p class="section-text">
+                Focusing on transparency and accessibility to experts. Emphasize clear reporting and availability to discuss strategies.
+              </p>
+
+            </div>
+
+          </div>
+
+          <div class="about-bottom">
+
+            <figure class="about-banner">
+              <img src="{% static 'assets/images/about-banner-2.png'%}" alt="Seo illustration">
+            </figure>
+
+            <div class="about-content">
+
+              <h3 class="h4 about-bottom-title">Advanced Analytics Review</h3>
+
+              <p class="section-text">
+                Understanding how users interact with your website throughout their lifecycle, not just the number of visits. As well as connecting analytics data directly with Google's advertising and publishing tools to optimize campaigns in real-time.
+              </p>
+
+              <h3 class="h4 about-bottom-title">Improve Your Website Ranking Fast</h3>
+
+              <ul class="about-bottom-list">
+
+                <li class="about-bottom-item">
+                  <p class="section-text">
+                    Ensure that your site has a high loading speed and is mobile-friendly. You can test the site's performance using Google PageSpeed Insights.
+                  </p>
+                </li>
+
+                <li class="about-bottom-item">
+                  <p class="section-text">
+                    Targeting keywords with high search volume but reasonable competition using tools like Ahrefs or Semrush.
+                  </p>
+                </li>
+
+                <li class="about-bottom-item">
+                  <p class="section-text">
+                    Building content that is relevant and deeply answers the user's search intent.
+                  </p>
+                </li>
+
+              </ul>
+
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #FEATURES
+      -->
+
+      <section class="features" id="features">
+        <div class="container">
+
+          <p class="section-subtitle">Market research</p>
+
+          <h2 class="h3 section-title">Integrated marketing solutions that fuel business growth</h2>
+
+          <ul class="features-list">
+
+            <li>
+              <div class="features-card">
+
+                <div class="card-icon">
+                  <ion-icon name="analytics-outline"></ion-icon>
+                </div>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">Advanced Analytics Review</h3>
+
+                  <p class="section-text">
+                    Evaluate the performance of individual pages, target keywords, and ensure the site can be crawled and indexed properly by search engines.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="features-card">
+
+                <div class="card-icon">
+                  <ion-icon name="mail-open-outline"></ion-icon>
+                </div>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">Email Marketing Campaigns</h3>
+
+                  <p class="section-text">
+                   Leverage the combined power of organic search visibility and direct audience communication to drive conversions, increase website traffic, and build brand loyalty.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="features-card">
+
+                <div class="card-icon">
+                  <ion-icon name="film-outline"></ion-icon>
+                </div>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">Video Marketing</h3>
+
+                  <p class="section-text">
+                   A marketing method that uses video content to increase visibility, engagement, and conversions on search engines (Google & YouTube), and creates videos that are relevant, informative, and educational.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="features-card">
+
+                <div class="card-icon">
+                  <ion-icon name="globe-outline"></ion-icon>
+                </div>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">Search Engine Optimization (SEO)</h3>
+
+                  <p class="section-text">
+                    Focuses on improving search engine rankings by ensuring fast, mobile-friendly performance and aligning with evolving search algorithms for increased organic traffic and lead generation.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="features-card">
+
+                <div class="card-icon">
+                  <ion-icon name="magnet-outline"></ion-icon>
+                </div>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">Pay Per Click (PPC)</h3>
+
+                  <p class="section-text">
+                    Provide a strategic, paid approach to digital marketing that complements long-term organic search efforts. Services include setting up, monitoring, and optimizing.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="features-card">
+
+                <div class="card-icon">
+                  <ion-icon name="layers-outline"></ion-icon>
+                </div>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">Content Marketing</h3>
+
+                  <p class="section-text">
+                    Focus on creating valuable material for the audience to drive conversions, using keyword research to determine the topics of articles, guides, or resources sought by the audience.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #PRICING
+      -->
+
+      <section class="pricing" id="pricing">
+        <div class="container">
+
+          <div class="pricing-content">
+
+            <p class="section-subtitle">Easiest to use</p>
+
+            <h2 class="h3 section-title">One brilliant idea for every client</h2>
+
+            <p class="section-text">
+              Optimize product images with descriptive file names and implement structured data (Schema markup) for products to appear in Google Images and Shopping results.
+            </p>
+
+            <button class="btn btn-primary">Pricing & packages</button>
+
+          </div>
+
+          <figure class="pricing-banner">
+            <img src="{% static 'assets/images/pricing-banner.png'%}" alt="Pricing illustration">
+          </figure>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #FAQ
+      -->
+
+      <section class="faq" id="faq">
+        <div class="container">
+
+          <p class="section-subtitle">Frequently asked questions</p>
+
+          <h2 class="h3 section-title">Everything you need to know before getting started</h2>
+
+          <div class="grid-wrapper">
+
+            <ul class="faq-list">
+
+              <li>
+                <h3 class="h4 card-title">Can I see SCEO in action before purchasing?</h3>
+
+                <p class="section-text">
+                  Yes, you can see SCEO - SEO Agency website in action before "purchasing" (or rather, downloading/using) it. SCEO is a fully responsive SEO agency website, You can directly see the live preview of the SCEO website to experience its design, responsiveness, and layout.
+                </p>
+              </li>
+
+              <li>
+                <h3 class="h4 card-title">What are the requirements for using SCEO?</h3>
+
+                <p class="section-text">
+                  Using the service involve technical access to your website, specific CMS usage, and compliance prerequisites. For the Access you must provide access to your hosting account for the installation and configuration of the service.
+                </p>
+              </li>
+
+              <li>
+
+                <h3 class="h4 card-title">Can I use SCEO on different devices?</h3>
+
+                <ul class="faq-item-list">
+
+                  <li>
+                    <p class="section-text">
+                      Yes, the SCEO Agency website is fully responsive and designed to be used across different devices, including desktops, tablets, and mobile phones.
+                    </p>
+                  </li>
+
+                  <li>
+                    <p class="section-text">
+                      The website is built using HTML, CSS, and JavaScript to ensure it adapts seamlessly to various screen sizes.
+                    </p>
+                  </li>
+
+                </ul>
+
+              </li>
+
+            </ul>
+
+            <ul class="faq-list">
+
+              <li>
+                <h3 class="h4 card-title">Do you have a free trial?</h3>
+
+                <p class="section-text">
+                  Provides a 14-day free trial of their SCEO software, which includes tools for rank tracking, site auditing, and competitive analysis.
+                </p>
+              </li>
+
+              <li>
+                <h3 class="h4 card-title">How does SCEO handle my privacy?</h3>
+
+                <p class="section-text">
+                  SCEO collects personal information provided directly by users, such as when submitting inquiries, filling out contact forms, or signing up for services.
+                </p>
+
+                <p class="section-text">
+                  The agency may automatically collect technical data like IP addresses, browser types, and navigation behavior to improve services.
+                </p>
+
+              </li>
+
+              <li>
+
+                <h3 class="h4 card-title">I have an issue with my account</h3>
+
+                <ul class="faq-item-list">
+
+                  <li>
+                    <p class="section-text">
+                      If emails/calls go unanswered, escalate through the platform where you purchased the service at SCEO website.
+                    </p>
+                  </li>
+
+                  <li>
+                    <p class="section-text">
+                      If you are paying monthly and seeing no progress or poor-quality work, document everything and request a detailed report of all actions taken.
+                    </p>
+                  </li>
+
+                </ul>
+
+              </li>
+
+            </ul>
+
+          </div>
+
+          <p class="faq-bottom-link">
+            Have more questions?
+            <a href="#">Ask your question here</a>
+          </p>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #CTA
+      -->
+
+      <section class="cta">
+        <div class="container">
+          <div class="cta-card">
+
+            <h2 class="cta-title">Try SCEO free for 14 days. Start your trial now and pick a plan later</h2>
+
+            <div class="cta-button-wrapper">
+              <button class="btn btn-primary">Get started now</button>
+
+              <a href="#faq">Read The FAQs</a>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer>
+
+    <div class="footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="footer-logo">
+            <img src="{% static 'assets/images/logo.svg'%}" alt="SCEO logo">
+          </a>
+
+          <p class="section-text">
+            Integrating modern search engine optimization with AI-driven, user-centric strategies. Focus on visibility, trust, and conversion.
+          </p>
+
+        </div>
+
+        <div class="footer-link-box">
+
+          <ul class="footer-list">
+
+            <li>
+              <p class="h4">Company</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">About Us</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Careers</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Press & Media</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Contact Us</a>
+            </li>
+
+          </ul>
+
+          <ul class="footer-list">
+
+            <li>
+              <p class="h4">Discover</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Our Blog</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Advertising</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Plans & Pricing</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Testimonials</a>
+            </li>
+
+          </ul>
+
+          <ul class="footer-list">
+
+            <li>
+              <p class="h4">Legal</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Terms of Use</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Privacy Policy</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Cookie Policy</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Site Map</a>
+            </li>
+
+          </ul>
+
+          <ul class="footer-list">
+
+            <li>
+              <p class="h4">Support</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">FAQs</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Editor Help</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Community</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Live Chatting</a>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2026 SCEO. All Rights Reserved.
+        </p>
+
+        <ul class="social-list">
+
+          <li>
+            <a href="#" class="social-link">GitHub</a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">Twitter / X</a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">Instagram</a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">YouTube</a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #GO TOP
+  -->
+
+  <a href="#top" class="go-top-btn" data-go-top>
+    <ion-icon name="arrow-up-outline"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="{% static 'js/script.js'%}"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
